@@ -5,10 +5,13 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.3.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>dio.expertostech</groupId>
+	<artifactId>tutorial-microsservico-kafka</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<name>Tutorial Microsservico Kafka</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -29,11 +32,20 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.kafka</groupId>
 			<artifactId>spring-kafka</artifactId>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.17.2</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
